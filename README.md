@@ -7,6 +7,7 @@
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Node.js Version](https://img.shields.io/badge/Node.js-18.x-green?style=for-the-badge&logo=node.js&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ---
@@ -44,6 +45,19 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 
 ---
 
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas!  
+Se você quiser colaborar com melhorias, siga os passos:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
+3. Commit suas alterações (`git commit -m 'Adicionando minha feature'`)
+4. Faça push para a branch (`git push origin minha-feature`)
+5. Abra um Pull Request
+
+--- 
+
 ## 📂 Estrutura do projeto
 ```Cadastro/
 ├── backend/        # API em Express + SQLite
@@ -73,6 +87,7 @@ npm start
 ```
 
 ---
+
 📢 Observação
 Este repositório é público e pode ser usado como referência de estudo.
 Fique à vontade para clonar, testar e sugerir melhorias!
