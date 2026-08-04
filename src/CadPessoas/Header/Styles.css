@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #00ffff;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 1200;
+  box-shadow: 0 0 12px #00ffff55;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00ffff, #00ff99);
+  box-shadow:
+    0 0 12px #00ffff,
+    0 0 24px #00ff99;
+}
+
+.titulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  margin-left: 30px;
+}
+
+.usuario {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1300;
+  padding: 6px 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #00ffff55;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* abre logo abaixo do usuário */
+  left: 50%; /* centraliza */
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
+  border: 1px solid #00ffff55;
+  border-radius: 6px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 160px;
+  box-shadow: 0 0 12px #00ffff55;
+  z-index: 1400;
+}
+
+.dropdown li {
+  padding: 8px 15px;
+}
+
+.dropdown li a {
+  color: #00ffff;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background: #00ffff22;
+  text-shadow: 0 0 8px #00ffff;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .usuario {
+    margin-top: 5px;
+    font-size: 14px;
+    position: static; /* evita sobreposição */
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 1rem;
+  }
+
+  .usuario span {
+    display: none; /* oculta texto "Administrador" em telas muito pequenas */
+  }
+}

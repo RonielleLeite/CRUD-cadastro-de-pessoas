@@ -1,0 +1,128 @@
+/* ===== SIDEBAR ===== */
+.menulateral {
+  width: 250px;
+  background: linear-gradient(180deg, #0a0a1a, #111);
+  color: #00ffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00ffff55;
+  transition: width 0.3s ease;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 1100;
+}
+
+.menulateral ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menulateral li {
+  margin-bottom: 12px;
+}
+
+.menulateral a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 6px;
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.2s ease;
+}
+
+.menulateral a svg {
+  font-size: 18px;
+  color: #00ffff;
+  filter: drop-shadow(0 0 4px #00ffff);
+}
+
+.menulateral a:hover {
+  background: #00ffff22;
+  box-shadow: 0 0 12px #00ffff88;
+  transform: scale(1.05);
+}
+
+.menulateral a.active {
+  background: #00ffff33;
+  box-shadow: 0 0 15px #00ffff;
+  color: #00ff99;
+}
+
+.menulateral a.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: #00ffff;
+  box-shadow: 0 0 8px #00ffff;
+  border-radius: 2px;
+}
+
+.menulateral::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, #00ffff, #00ff99);
+  box-shadow:
+    0 0 12px #00ffff,
+    0 0 24px #00ff99;
+}
+
+/* ===== MAIN ===== */
+main {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+  .menulateral {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px; /* altura da barra horizontal */
+    padding: 0 15px;
+    position: relative; /* não fica fixo */
+    top: 0;
+  }
+
+  .menulateral ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .menulateral a {
+    flex-direction: column; /* ícone em cima, texto embaixo */
+    gap: 6px;
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  main {
+    margin-left: 0;
+    margin-top: 0;
+    /* 60px do header + 70px do sidebar horizontal */
+  }
+}

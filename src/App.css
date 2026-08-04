@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column; /* Header em cima, resto embaixo */
+  height: 100vh;
+  background-color: #0a0a1a;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header ocupa toda a largura */
+header {
+  background-color: #111;
+  color: #00ffff;
+  padding: 15px 20px;
+  box-shadow: 0 0 10px #00ffff55;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Container abaixo do Header */
+.content {
+  display: flex;
+  flex: 1;
+}
+
+/* ===== RELATÓRIOS ===== */
+.relatorio-container {
+  background-color: #1a1a2e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #00ffff33;
+  margin-top: 20px;
+}
+
+.relatorio-container h2 {
+  color: #00ffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 6px #00ffff55;
+}
+
+/* Cartões de filtros e estatísticas */
+.card {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px #00ffff22;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+/* Inputs dos filtros */
+.filtros-simples-form input {
+  background-color: #1a1a2e;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin-right: 10px;
+  color: #e0e0e0;
+  box-shadow: 0 0 5px #00ffff33;
+}
+
+.filtro-actions-simples button {
+  background-color: #ff0066;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 8px #ff006655;
+}
+
+/* Linha de relatórios (estatísticas + tabela lado a lado) */
+.linha-relatorio {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Sidebar à esquerda */
+.menulateral {
+  width: 250px; /* largura padrão */
+  background-color: #111;
+  color: #00ffff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 10px #00ffff55;
+  position: relative; /* não fica fixo */
+  height: auto;
+  transition: width 0.3s ease;
+}
+
+/* Sidebar colapsado */
+.menulateral.collapsed {
+  width: 70px; /* só ícones */
+  padding: 20px 10px;
+}
+
+/* Área principal à direita */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  transition: margin-left 0.3s ease;
+}
+
+button {
+  background: linear-gradient(90deg, #00f, #0ff);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 12px #00f;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0ff, #00f);
+  box-shadow: 0 0 20px #0ff;
+  transform: scale(1.05);
+}
+
+/* ===== DESKTOP ===== */
+@media (min-width: 769px) {
+  .content {
+    display: flex; /* menu lateral e main lado a lado */
+  }
+
+  .menulateral {
+    width: 250px; /* largura padrão */
+    flex-shrink: 0; /* não encolhe */
+  }
+
+  .menulateral.collapsed {
+    width: 70px; /* só ícones */
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* menu em cima, main logo abaixo */
+  }
+
+  .menulateral {
+    width: 100%; /* ocupa toda largura quando aberto */
+    margin: 0; /* sem espaçamento lateral */
+  }
+
+  .menulateral.collapsed {
+    width: 70px; /* só ícones */
+  }
+
+  .main-content {
+    margin-left: 0 !important; /* força sem margem */
+  }
+}
