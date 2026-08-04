@@ -42,19 +42,6 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 - ✅ Editar dados de uma pessoa  
 - ✅ Excluir pessoa  
 
----
-
-## 🤝 Contribuição
-
-Contribuições são sempre bem-vindas!  
-Se você quiser colaborar com melhorias, siga os passos:
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
-3. Commit suas alterações (`git commit -m 'Adicionando minha feature'`)
-4. Faça push para a branch (`git push origin minha-feature`)
-5. Abra um Pull Request
-
 --- 
 
 ## 📂 Estrutura do projeto
@@ -65,8 +52,6 @@ Se você quiser colaborar com melhorias, siga os passos:
 ├── README.md       # Documentação do projeto
 └── .gitignore      # Arquivos ignorados pelo Git
 ```
-
-
 ---
 
 ## ▶️ Como rodar o projeto
@@ -90,6 +75,21 @@ npm start
 📢 Observação
 Este repositório é público e pode ser usado como referência de estudo.
 Fique à vontade para clonar, testar e sugerir melhorias!
+
+---
+
+## 🤝 Contribuição
+
+Contribuições são sempre bem-vindas!  
+Se você quiser colaborar com melhorias, siga os passos:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b minha-feature`)
+3. Commit suas alterações (`git commit -m 'Adicionando minha feature'`)
+4. Faça push para a branch (`git push origin minha-feature`)
+5. Abra um Pull Request
+
+---
 
 ✨ Autor
 Desenvolvido por Ronielle Leite
