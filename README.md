@@ -13,7 +13,7 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 
 ## 📸 Demonstração
 
-![Relatório do Sistema](./prints/relatorio.png)
+![Relatório do Sistema](./prints/relatorios.png)
 
 ---
 
