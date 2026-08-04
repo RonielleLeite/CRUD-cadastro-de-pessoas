@@ -1,7 +1,14 @@
 # 📋 CRUD de Cadastro de Pessoas
 
-Sistema desenvolvido para praticar **React no front-end**, **Express no back-end** e **SQLite como banco de dados**.  
-Além das operações básicas de **criação, leitura, atualização e exclusão (CRUD)**, o sistema oferece recursos avançados como:
+![GitHub repo size](https://img.shields.io/github/repo-size/RonielleLeite/CRUD-cadastro-de-pessoas)
+![GitHub last commit](https://img.shields.io/github/last-commit/RonielleLeite/CRUD-cadastro-de-pessoas)
+![GitHub license](https://img.shields.io/github/license/RonielleLeite/CRUD-cadastro-de-pessoas)
+![GitHub issues](https://img.shields.io/github/issues/RonielleLeite/CRUD-cadastro-de-pessoas)
+![GitHub stars](https://img.shields.io/github/stars/RonielleLeite/CRUD-cadastro-de-pessoas?style=social)
+
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 - 📊 Relatórios completos com filtros por nome, e-mail e data de nascimento  
 - 📈 Visualização gráfica de cadastros (total, novos no mês e excluídos)  
