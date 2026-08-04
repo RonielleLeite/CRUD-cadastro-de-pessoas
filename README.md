@@ -39,7 +39,8 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 ├── frontend/       # Aplicação React
 ├── database.db     # Banco de dados local
 ├── README.md       # Documentação do projeto
-└── .gitignore      # Arquivos ignorados pelo Git ```
+└── .gitignore      # Arquivos ignorados pelo Git
+```
 
 
 ---
@@ -67,11 +68,3 @@ Fique à vontade para clonar, testar e sugerir melhorias!
 
 ✨ Autor
 Desenvolvido por Ronielle Leite
-
-
----
-
-✅ Esse README já está pronto para substituir o que você apagou.  
-👉 Agora basta salvar esse conteúdo em um arquivo chamado `README.md` na raiz do projeto, adicionar ao Git e dar commit/push.  
-
-Quer que eu te mostre os **comandos exatos** para recriar esse arquivo, adicionar ao Git e enviar para o GitHub sem erro?
