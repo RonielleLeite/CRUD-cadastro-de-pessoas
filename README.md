@@ -10,7 +10,6 @@
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 ---
-
 Sistema desenvolvido para praticar **React no front-end**, **Express no back-end** e **SQLite como banco de dados**.  
 Além das operações básicas de **criação, leitura, atualização e exclusão (CRUD)**, o sistema oferece recursos avançados como:
 
@@ -21,13 +20,11 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 - 📧 Envio automático de relatórios por e-mail  
 
 ---
-
 ## 📸 Demonstração
 
 ![Relatório do Sistema](./prints/relatorios.png)
 
 ---
-
 ## 🚀 Tecnologias
 - **Front-end:** React + Vite  
 - **Back-end:** Node.js + Express  
@@ -35,7 +32,6 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 - **Controle de versão:** Git & GitHub  
 
 ---
-
 ## ⚙️ Funcionalidades
 - ✅ Cadastrar nova pessoa  
 - ✅ Listar pessoas cadastradas  
@@ -43,7 +39,6 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 - ✅ Excluir pessoa  
 
 --- 
-
 ## 📂 Estrutura do projeto
 ```Cadastro/
 ├── backend/        # API em Express + SQLite
@@ -53,7 +48,6 @@ Além das operações básicas de **criação, leitura, atualização e exclusã
 └── .gitignore      # Arquivos ignorados pelo Git
 ```
 ---
-
 ## ▶️ Como rodar o projeto
 
 ### Back-end
@@ -71,13 +65,11 @@ npm start
 ```
 
 ---
-
 📢 Observação
 Este repositório é público e pode ser usado como referência de estudo.
 Fique à vontade para clonar, testar e sugerir melhorias!
 
 ---
-
 ## 🤝 Contribuição
 
 Contribuições são sempre bem-vindas!  
@@ -90,6 +82,6 @@ Se você quiser colaborar com melhorias, siga os passos:
 5. Abra um Pull Request
 
 ---
+## ✨ Autor
 
-✨ Autor
 Desenvolvido por Ronielle Leite
