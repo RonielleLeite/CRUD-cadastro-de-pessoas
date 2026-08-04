@@ -10,6 +10,9 @@
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 
 
+Sistema desenvolvido para praticar **React no front-end**, **Express no back-end** e **SQLite como banco de dados**.  
+Além das operações básicas de **criação, leitura, atualização e exclusão (CRUD)**, o sistema oferece recursos avançados como:
+
 - 📊 Relatórios completos com filtros por nome, e-mail e data de nascimento  
 - 📈 Visualização gráfica de cadastros (total, novos no mês e excluídos)  
 - 📅 Evolução mensal dos cadastros em gráficos de linha  
